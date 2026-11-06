@@ -1,0 +1,64 @@
+FORÇA MARINGAENSE — LOJA VIRTUAL / PRIMEIRA MONTAGEM
+
+ABRIR A PRÉVIA
+1. Baixe e extraia o arquivo ZIP.
+2. Abra a pasta "forca_maringaense_site".
+3. Dê duplo clique em index.html para visualizar no navegador.
+4. A prévia usa a logo original enviada e funciona em desktop e celular.
+
+O QUE JÁ FOI MONTADO
+- Página inicial responsiva com identidade verde-petróleo, preto e branco.
+- Logo oficial da Força Maringaense.
+- Navegação por categorias.
+- Categorias: bonés, acessórios, camisetas, caravanas, calças, shorts, regatas, sócio, corta-vento, moletons, baby look Tropa Feminina e outros.
+- Busca, filtro e ordenação do catálogo.
+- Detalhe de produto com variações/tamanhos.
+- Sacola com quantidades e subtotal.
+- Checkout demonstrativo com dados de cliente, entrega e pagamento.
+- Envio de pedido por WhatsApp após configurar o número.
+- Área administrativa demonstrativa para cadastrar, editar, excluir produtos e fotos.
+- Lista de pedidos e alteração de status.
+- Configurações de WhatsApp e retirada.
+
+O QUE AINDA PRECISA PARA PUBLICAR E VENDER DE VERDADE
+Esta versão é o front-end navegável e uma demonstração local. Os dados ficam no navegador usado para abrir a página e não são sincronizados entre clientes ou dispositivos.
+Antes de produção, será necessário implementar:
+- Backend e banco de dados para produtos, clientes, pedidos e estoque.
+- Login administrativo seguro, com permissões.
+- Integração real de pagamento (Mercado Pago ou outro provedor).
+- Notificações/webhooks para confirmar pagamentos.
+- Frete real dos Correios e regras de retirada.
+- Hospedagem, domínio e HTTPS.
+- Políticas de privacidade, troca/devolução e termos de compra.
+
+Não use esta prévia para processar vendas reais ou armazenar dados reais de clientes.
+
+
+ATUALIZAÇÃO V2 — INSTAGRAM, WHATSAPP E DESCONTO DE SÓCIO
+- Instagram no menu e rodapé: https://www.instagram.com/forcamaringaense_oficial/
+- Botão flutuante de WhatsApp. Para funcionar, configure o número oficial em Administração > Configurações.
+- Área de validação de CPF no carrinho e desconto demonstrativo de 10%.
+- O CPF digitado não é salvo no armazenamento local nem incluído no pedido demonstrativo.
+- A prévia valida somente os dígitos verificadores do CPF. Isso NÃO confirma que a pessoa é sócia ativa.
+- Para exclusividade real: implementar backend com consulta ao cadastro oficial de associados, emitir token/código individual de uso único e impedir reutilização. Não armazenar CPF em texto aberto no navegador.
+- Para ativar o botão de WhatsApp, ainda é necessário informar o número oficial com DDI + DDD + número, apenas dígitos.
+
+
+ATUALIZAÇÃO V3 — REDESIGN E-COMMERCE
+- Cabeçalho escuro com logo, busca, atendimento, área do sócio e carrinho.
+- Segunda barra de navegação branca com categorias.
+- Banner principal amplo com padrão geométrico sutil, tipografia forte, emblema da torcida, setas e três destaques.
+- Paleta da Força preservada: verde-petróleo, verde, preto e branco.
+- Busca reposicionada no cabeçalho; filtro e ordenação continuam na vitrine.
+- Layout responsivo para celular e computador.
+- Instagram, botão de atendimento, sacola e desconto de sócio preservados.
+- Logo otimizada em WebP para melhorar o carregamento do site.
+
+
+ATUALIZAÇÃO V4 — CATALOGO INFERIOR
+- A parte inferior da home foi refeita para ficar mais parecida com a referência de loja.
+- Título “CATÁLOGO / PRODUTOS RECOMENDADOS”.
+- Contador dinâmico de itens exibidos.
+- Grade de produtos em estilo vitrine, com 5 colunas no desktop.
+- Cards mais limpos, com foco em imagem, nome e preço.
+- Filtro de favoritos agora também funciona na vitrine.

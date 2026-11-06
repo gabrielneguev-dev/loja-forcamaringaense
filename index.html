@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#064b45">
+  <meta name="description" content="Loja oficial Força Maringaense — produtos, acessórios, caravanas e associação.">
+  <title>Força Maringaense | Loja Oficial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="store-header">
+    <div class="store-header-main">
+      <a class="store-brand" href="#inicio" aria-label="Força Maringaense - início">
+        <img src="assets/logo-forca-maringaense.webp" alt="Escudo Força Maringaense">
+        <span class="store-brand-name">FORÇA <b>MARINGAENSE</b></span>
+      </a>
+      <label class="header-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input id="search" type="search" placeholder="Buscar produtos na loja..." aria-label="Buscar produtos">
+        <span class="search-shortcut">⌕</span>
+      </label>
+      <div class="store-header-actions">
+        <button class="header-action" id="headerSupport" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H9l-5 4v-14.5Z"></path></svg>
+          <span><b>Central de</b><strong>Atendimento</strong></span>
+        </button>
+        <a class="header-action member-header-link" href="#associacao">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg>
+          <span><b>Área do</b><strong>Sócio</strong></span>
+        </a>
+        <button class="header-action favorites-action" id="headerFavorites" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.7c0 5.1-8.8 11-8.8 11s-8.8-5.9-8.8-11A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"></path></svg>
+          <span><b>Favoritos</b><strong id="favoriteCount">0 itens</strong></span>
+        </button>
+        <button class="header-cart" id="openCart" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2A2.2 2.2 0 0 0 9.4 17h8.8a2.2 2.2 0 0 0 2.1-1.6L22 8H6"></path><circle cx="10" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle></svg>
+          <span><b>Meu carrinho</b><strong id="headerCartTotal">R$ 0,00</strong><small id="cartCount">0 itens</small></span>
+        </button>
+      </div>
+      <button class="store-menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu">☰</button>
+    </div>
+    <nav class="main-nav" id="nav" aria-label="Categorias da loja">
+      <button type="button" data-nav-cat="Bonés">Bonés</button>
+      <button type="button" data-nav-cat="Acessórios">Acessórios</button>
+      <button type="button" data-nav-cat="Camisetas">Camisetas</button>
+      <button type="button" data-nav-cat="Baby look — Tropa Feminina">Feminino</button>
+      <button type="button" data-nav-cat="Calças">Calças</button>
+      <button type="button" data-nav-cat="Moletons">Moletons</button>
+      <a href="#caravanas">Caravanas</a>
+      <a href="#associacao">Seja sócio</a>
+      <a href="https://www.instagram.com/forcamaringaense_oficial/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="store-hero" id="inicio" aria-label="Destaques da loja">
+      <div class="hero-pattern"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow"><span></span><b id="heroEyebrow">LOJA OFICIAL DA TORCIDA</b></p>
+          <h1 id="heroTitle">VISTA AS CORES.<br><em>CARREGUE A FORÇA.</em></h1>
+          <p class="hero-description" id="heroDescription">A identidade da arquibancada acompanha você dentro e fora dos estádios. Encontre os produtos da Força Maringaense.</p>
+          <div class="hero-actions">
+            <a class="hero-button" href="#colecao">COMPRAR AGORA <span>↗</span></a>
+            <a class="hero-text-link" href="#associacao">Conheça o benefício de sócio</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-ring hero-ring-one"></div>
+          <div class="hero-ring hero-ring-two"></div>
+          <div class="hero-stamp">HONRA<br><span>RAÇA</span><br>COLETIVIDADE</div>
+          <img src="assets/logo-forca-maringaense.webp" alt="Mascote e escudo oficial da Força Maringaense">
+          <span class="hero-visual-caption">MARINGÁ • PARANÁ</span>
+        </div>
+      </div>
+      <button class="hero-arrow hero-prev" type="button" data-slide-step="-1" aria-label="Banner anterior">‹</button>
+      <button class="hero-arrow hero-next" type="button" data-slide-step="1" aria-label="Próximo banner">›</button>
+      <div class="hero-dots" aria-label="Selecionar destaque">
+        <button class="active" type="button" data-slide-index="0" aria-label="Destaque 1"></button>
+        <button type="button" data-slide-index="1" aria-label="Destaque 2"></button>
+        <button type="button" data-slide-index="2" aria-label="Destaque 3"></button>
+      </div>
+      <div class="hero-edge-label">FORÇA MARINGAENSE — DESDE SEMPRE NA ARQUIBANCADA</div>
+    </section>
+
+
+
+    <div class="store-highlights">
+      <div><span class="highlight-icon">✦</span><span><b>PRODUTOS DA TORCIDA</b><small>Vista a identidade da Força</small></span></div>
+      <div><span class="highlight-icon">↗</span><span><b>ENTREGA E RETIRADA</b><small>Escolha a melhor opção no pedido</small></span></div>
+      <div><span class="highlight-icon">10%</span><span><b>VANTAGEM DE SÓCIO</b><small>Desconto para associados ativos</small></span></div>
+    </div>
+
+    <section class="section categories" id="categorias">
+      <div class="section-title">
+        <div><p class="kicker">ENCONTRE O SEU ESTILO</p><h2>Compre por <em>categoria.</em></h2></div>
+        <p>Do dia a dia à arquibancada: escolha o que representa você.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-mark">FM</div>
+      <div class="manifesto-copy"><p class="kicker">UMA IDENTIDADE. UMA CAMINHADA.</p><h2>Não é só vestir.<br><em>É representar.</em></h2></div>
+      <p class="manifesto-description">A Força se constrói na união de quem está junto. Cada peça carrega um pouco dessa história.</p>
+    </section>
+
+    <section class="section collection storefront-section" id="colecao">
+      <div class="catalog-header">
+        <div class="catalog-title-group">
+          <p class="catalog-tag">CATÁLOGO</p>
+          <h2>PRODUTOS RECOMENDADOS</h2>
+        </div>
+        <div class="catalog-summary"><span id="productCountSummary">0 ITENS</span></div>
+      </div>
+      <div class="catalog-divider"></div>
+      <div class="catalog-tools storefront-tools">
+        <select id="filterCategory" aria-label="Filtrar categoria"><option value="">Todas as categorias</option></select>
+        <select id="sortProducts" aria-label="Ordenar produtos"><option value="featured">Ordenar por</option><option value="low">Menor preço</option><option value="high">Maior preço</option><option value="name">Nome</option></select>
+      </div>
+      <div class="products catalog-products" id="products"></div>
+    </section>
+
+    <section class="feature-panels">
+      <article class="feature-card feature-caravan" id="caravanas">
+        <p class="kicker">NA ESTRADA COM A FORÇA</p><h2>Caravanas.</h2>
+        <p>Fique por dentro das viagens, jogos e informações para acompanhar a torcida.</p>
+        <button class="btn btn-outline" data-feature="caravanas">Ver informações <span>↗</span></button>
+      </article>
+      <article class="feature-card feature-member" id="associacao">
+        <p class="kicker">FAÇA PARTE DA CAMINHADA</p><h2>Seja <em>sócio.</em></h2>
+        <p>Em breve, você poderá conferir as modalidades e solicitar seu cadastro por aqui.</p>
+        <button class="btn btn-dark" data-feature="socio">Saiba mais <span>↗</span></button>
+      </article>
+    </section>
+
+    <section class="benefits">
+      <div><span>01</span><b>Identidade</b><small>As cores que nos representam.</small></div>
+      <div><span>02</span><b>Coletividade</b><small>Uma torcida, uma caminhada.</small></div>
+      <div><span>03</span><b>Entrega</b><small>Correios ou retirada em mãos.</small></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <a class="footer-brand" href="#inicio"><img src="assets/logo-forca-maringaense.webp" alt=""><span><b>FORÇA MARINGAENSE</b><small>HONRA • RAÇA • COLETIVIDADE</small></span></a>
+      <div class="footer-nav"><a href="#categorias">Categorias</a><a href="#colecao">Produtos</a><a href="#caravanas">Caravanas</a><a href="#associacao">Seja sócio</a><a href="https://www.instagram.com/forcamaringaense_oficial/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><button class="admin-footer-link" id="openAdmin" type="button">Administração ⚙</button></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Força Maringaense. Todos os direitos reservados.</span><span>MARINGÁ — PARANÁ · <a href="https://www.instagram.com/forcamaringaense_oficial/" target="_blank" rel="noopener noreferrer">@forcamaringaense_oficial</a></span></div>
+  </footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-head"><div><p class="kicker">SEU PEDIDO</p><h2>Sacola</h2></div><button class="close" data-close>×</button></div>
+    <div class="cart-lines" id="cartLines"></div>
+    <section class="member-discount" aria-label="Desconto para sócios">
+      <div class="member-discount-heading"><strong>É sócio da Força?</strong><small>Valide seu benefício e receba 10% de desconto nos produtos elegíveis.</small></div>
+      <div class="member-validate"><input id="memberCpf" inputmode="numeric" autocomplete="off" maxlength="14" placeholder="CPF do associado"><button id="validateMember" type="button">Validar</button></div>
+      <p id="memberStatus" class="member-status" aria-live="polite">O CPF será usado apenas para validação nesta demonstração.</p>
+    </section>
+    <div class="cart-bottom">
+      <div class="subtotal"><span>Subtotal</span><b id="subtotal">R$ 0,00</b></div>
+      <div class="subtotal discount-row hidden" id="discountRow"><span>Desconto de sócio (10%)</span><b id="discountValue">-R$ 0,00</b></div>
+      <div class="subtotal total-row"><strong>Total</strong><strong id="grandTotal">R$ 0,00</strong></div><button class="btn btn-dark full" id="checkoutButton">Continuar compra</button><button class="whatsapp-link" id="cartWhatsapp">Finalizar pelo WhatsApp</button><p class="microcopy">Entrega por Correios ou retirada em mãos em Maringá.</p></div>
+  </aside>
+
+  <section class="modal" id="checkoutModal" role="dialog" aria-modal="true">
+    <div class="modal-heading"><div><p class="kicker">QUASE LÁ</p><h2>Finalizar pedido</h2></div><button class="close" data-close>×</button></div>
+    <form id="checkoutForm" class="form-grid">
+      <label>Nome completo<input name="name" required placeholder="Seu nome"></label>
+      <label>WhatsApp<input name="phone" required placeholder="(44) 99999-9999"></label>
+      <label class="wide">E-mail<input name="email" type="email" placeholder="voce@email.com"></label>
+      <label>Forma de entrega<select name="delivery"><option value="Retirada em mãos — Maringá">Retirada em mãos — Maringá</option><option value="Correios">Correios</option></select></label>
+      <label>Pagamento<select name="payment"><option value="A combinar">A combinar</option><option value="Pix">Pix</option><option value="Cartão">Cartão</option></select></label>
+      <label class="wide">Endereço (se escolher Correios)<textarea name="address" rows="2" placeholder="Rua, número, bairro, cidade e CEP"></textarea></label>
+      <div class="checkout-summary wide" id="checkoutSummary"></div><p class="notice wide">O benefício de 10% será aplicado após validação do associado. Nesta prévia, a conferência do CPF é apenas demonstrativa; a confirmação de sócio ativo e o código individual serão protegidos pelo servidor na versão publicada.</p><p class="notice wide">Pagamento on-line e cálculo automático do frete serão conectados na etapa de publicação.</p>
+      <button class="btn btn-dark full wide" type="submit">Registrar pedido de demonstração</button>
+      <button class="btn btn-outline-dark full wide" type="button" id="sendWhatsApp">Enviar pedido pelo WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="modal product-modal" id="productModal" role="dialog" aria-modal="true">
+    <div class="modal-heading"><div><p class="kicker">LOJA OFICIAL</p><h2 id="modalProductName">Produto</h2></div><button class="close" data-close>×</button></div>
+    <div id="productDetail"></div>
+  </section>
+
+  <section class="modal admin-modal" id="adminModal" role="dialog" aria-modal="true">
+    <div class="modal-heading"><div><p class="kicker">GESTÃO DA LOJA</p><h2>Área administrativa</h2></div><button class="close" data-close>×</button></div>
+    <div class="demo-alert"><b>Prévia de desenvolvimento.</b> O painel abaixo salva dados apenas neste navegador. Antes de publicar, vamos conectar banco de dados e login protegido.</div>
+    <div class="tabs"><button class="active" data-tab="products">Produtos</button><button data-tab="orders">Pedidos</button><button data-tab="settings">Configurações</button></div>
+    <div class="admin-pane" id="paneProducts">
+      <div class="admin-top"><h3>Catálogo</h3><button class="btn btn-dark btn-small" id="addProduct">+ Novo produto</button></div>
+      <form id="productForm" class="form-grid admin-form hidden">
+        <input type="hidden" name="id">
+        <label>Nome<input name="name" required placeholder="Nome do produto"></label>
+        <label>Categoria<select name="category" id="adminCategory"></select></label>
+        <label>Preço (R$)<input name="price" type="number" min="0" step="0.01" required placeholder="0,00"></label>
+        <label>Estoque<input name="stock" type="number" min="0" step="1" value="0"></label>
+        <label class="wide">Tamanhos/variações (separados por vírgula)<input name="sizes" placeholder="P, M, G, GG ou Único"></label>
+        <label class="wide">Descrição<textarea name="description" rows="2" placeholder="Descrição do produto"></textarea></label>
+        <label class="wide">Foto<input name="image" type="file" accept="image/*"></label>
+        <div class="form-actions wide"><button class="btn btn-dark" type="submit">Salvar produto</button><button class="btn btn-outline-dark" type="button" id="cancelProduct">Cancelar</button></div>
+      </form>
+      <div class="admin-list" id="adminProducts"></div>
+    </div>
+    <div class="admin-pane hidden" id="paneOrders"><h3>Pedidos recebidos</h3><div class="admin-list" id="adminOrders"></div></div>
+    <div class="admin-pane hidden" id="paneSettings">
+      <h3>Dados da loja</h3>
+      <label class="settings-label">WhatsApp oficial (DDI + DDD + número)<input id="whatsappNumber" placeholder="5544999999999"></label>
+      <label class="settings-label">Orientação para retirada<input id="pickupText" placeholder="Ex.: retirada a combinar em Maringá"></label>
+      <button class="btn btn-dark" id="saveSettings">Salvar configurações</button>
+      <p class="notice">O WhatsApp será usado para abrir a conversa com o pedido preenchido. Configure apenas um número oficial da loja.</p>
+    </div>
+  </section>
+  <button class="floating-whatsapp" id="floatingWhatsApp" type="button" aria-label="Falar com a Força Maringaense pelo WhatsApp"><span class="wa-icon">◔</span><span>Fale com a torcida</span></button>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
